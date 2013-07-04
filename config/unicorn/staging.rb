@@ -1,4 +1,4 @@
-app_dir = "/var/www/apps/cite_staging"
+app_dir = "/var/www/apps/guinea_staging"
 
 # Set unicorn options
 worker_processes 4
