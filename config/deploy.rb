@@ -22,7 +22,7 @@ set :rvm_ruby_string, "ruby-2.0.0-head"
 set :rvm_install_with_sudo, true
 set :rvm_autolibs_flag, "readonly"
 
-set :base_directory, '/var/www/'
+set :base_directory, '/var/www'
 
 before 'deploy:setup', 'rvm:install_rvm'
 before 'deploy:setup', 'rvm:install_ruby'
