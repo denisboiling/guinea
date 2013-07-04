@@ -1,21 +1,21 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: template_dev
+  database: guinea_dev
   username: root
   password: ''
 
 test: &test
   adapter: mysql2
   encoding: utf8
-  database: template_test
+  database: guinea_test
   username: root
   password: ''
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: template_prod
+  database: guinea_prod
   username: root
   password: ''
 
