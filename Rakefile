@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Cite::Application.load_tasks
+Guinea::Application.load_tasks
