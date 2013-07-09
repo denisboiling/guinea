@@ -15,6 +15,7 @@
 //= require bootstrap-modal
 //= require jquery.mCustomScrollbar
 //= require jquery.mousewheel
+//= require jquery.liquidcarousel
 //= require shared/global
 //= require_tree .
 //= require i18n
