@@ -10,7 +10,7 @@ require 'capistrano/ext/multistage'
 set :application, "guinea" #write app name there
 
 set :scm, :git
-set :repository,  "git@github.com:Nesit/guinea.git" #place your repo there
+set :repository,  "git@github.com:balticit/guinea.git" #place your repo there
 
 set :deploy_via, :remote_cache
 
