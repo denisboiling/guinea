@@ -1,41 +1,10 @@
 <div class="header_slider">
   <div id="da-slider" class="da-slider">
-    <div class="da-slide">
-      <p class="slider_paragraph_first">
-        <span class="paragraph_white">Оформи</span>
-        <span class="paragraph_yellow">страховой</span>
-      </p>
+    
+    <% Banner.all.each do |banner| %>
+      <%= render 'pages/index/slide', banner: banner %>
+    <% end %>
 
-      <p class="slider_paragraph_second">
-        <span class="paragraph_yellow">полис</span>
-        <span class="paragraph_white">на выходных</span>
-      </p>
-
-      <p class="slider_paragraph_third">
-        <span class="paragraph_white">условиях</span>
-        <span class="paragraph_white"></span>
-      </p>
-      <a href="#" class="da-link">подробнее</a>
-      <!--<div class="da-img"><img src="images/1.png" alt="image01" /></div>-->
-    </div>
-    <div class="da-slide">
-      <p class="slider_paragraph_first">
-        <span class="paragraph_white">Оформи</span>
-        <span class="paragraph_yellow">страховой</span>
-      </p>
-
-      <p class="slider_paragraph_second">
-        <span class="paragraph_yellow">полис</span>
-        <span class="paragraph_white">на выгодных</span>
-      </p>
-
-      <p class="slider_paragraph_third">
-        <span class="paragraph_white">условиях</span>
-        <span class="paragraph_white"></span>
-      </p>
-      <a href="#" class="da-link">подробнее</a>
-      <!--<div class="da-img"><img src="images/2.png" alt="image01" /></div>-->
-    </div>
     <nav class="da-arrows">
       <span class="da-arrows-prev">
         <%= image_tag 'nav_upper_slider_left.png' %>
