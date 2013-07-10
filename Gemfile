@@ -19,6 +19,8 @@ gem 'globalize3'
 gem 'ActiveAdmin-Globalize3-inputs'
 gem 'ancestry'
 gem 'email_validator', require: 'email_validator/strict'
+gem 'factory_girl_rails'
+gem 'ffaker'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
