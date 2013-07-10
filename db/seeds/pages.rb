@@ -1,7 +1,5 @@
 #coding: utf-8
 
-puts "locale: #{I18n.locale}"
-
 Page.reset_column_information
 Page.create!(slug: 'index', name: 'Главная', hidden: true)
 Page.create!(slug: 'about', name: 'О нас')
