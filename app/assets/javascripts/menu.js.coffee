@@ -19,3 +19,12 @@ $(document).ready ->
         $(this).find("span").addClass("menu_list_anchor_hover_blank")
     .mouseout ->
       $(this).find("span").removeClass("menu_list_anchor_hover")
+
+  $(".menu_list_item").bind 'mouseenter', (event) ->
+	  if !$(this).hasClass 'current'
+		  $links = $(this).find '.nested_links'
+		  $links.removeClass 'hidden'
+
+  $(".menu_list_item").bind 'mouseleave', (event) ->
+    $links = $(this).find('.nested_links')
+    $links.addClass('hidden')
