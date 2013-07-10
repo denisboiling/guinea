@@ -16,6 +16,8 @@
 //= require jquery.mCustomScrollbar
 //= require jquery.mousewheel
 //= require jquery.liquidcarousel
+//= require modernizr.custom
+//= require jquery.cslider
 //= require shared/global
 //= require_tree .
 //= require i18n

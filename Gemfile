@@ -28,6 +28,7 @@ group :assets do
 
   gem 'compass-rails'
   gem 'bootstrap-sass'
+  gem 'modernizr-rails'
 
   gem 'therubyracer', :platforms => :ruby
 
