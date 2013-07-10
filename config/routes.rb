@@ -2,7 +2,7 @@ Guinea::Application.routes.draw do
 
   mount_roboto
 
-  root :to => "pages#show", :slug => 'index', locale:'en'
+  root :to => "pages#show", :slug => 'index'
 
   mount Ckeditor::Engine => '/ckeditor'
 
