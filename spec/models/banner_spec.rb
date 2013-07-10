@@ -16,7 +16,7 @@ describe Banner do
 
   describe '#paragraph' do
     it "should return required line of content" do
-      banner.content = "hedgehog\nate\nelephant"
+      banner.content = "hedgehog\n\nate\nelephant"
       banner.paragraph(0).should == 'hedgehog'
       banner.paragraph(1).should == 'ate'
       banner.paragraph(2).should == 'elephant'

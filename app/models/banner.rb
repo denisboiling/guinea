@@ -4,6 +4,6 @@ class Banner < ActiveRecord::Base
   validates :content, presence: true
 
   def paragraph(n)
-    content.split("\n")[n]
+    content.split("\n").select(&:present?)[n]
   end
 end
