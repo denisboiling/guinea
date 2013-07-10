@@ -12,11 +12,6 @@ class Page < ActiveRecord::Base
   accepts_nested_attributes_for :translations
   validates :name, presence: true
 
-  # Зачем это здесь?
-  class Translation
-    validates :name, presence: true
-  end
-
   extend FriendlyId
   friendly_id :slug
 
