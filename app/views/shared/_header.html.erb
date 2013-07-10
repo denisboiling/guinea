@@ -1,9 +1,23 @@
-<header class="header">
-  <div class="wrapper">
-    <div class="row-fluid">
-      <div class="span12">
-        <%= render 'shared/lang_switcher' %>
-        <%= render 'shared/menu' %>      
+<div class="header row-fluid">
+  <div class="header_content">
+    <div class="header_bg">
+      <%= image_tag 'header_backgound.jpg', :class => 'header_background' %>
     </div>
+    <div class="header_logo">
+      <a href="/" class="header_logo_link">
+        <%= image_tag 'logo.png', :class => 'header_logo_img' %>
+      </a>
+    </div>
+    <div class="header_phone">
+      <p class="phone_code">+7 (4012)</p>
+      <p class="phone_number">602-000</p>
+    </div>
+
+    <%= render 'shared/menu' %>
+
+    <div class="header_hr1"></div>
+    <div class="header_hr2"></div>
+
+    <%= yield(:header) if content_for?(:header) %>
   </div>
-</header>
+</div>
