@@ -6,4 +6,8 @@ class Banner < ActiveRecord::Base
   def paragraph(n)
     content.split("\n").select(&:present?)[n]
   end
+
+  def to_s
+    "Баннер ##{id}"
+  end
 end
