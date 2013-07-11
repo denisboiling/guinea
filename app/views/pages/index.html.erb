@@ -1,5 +1,11 @@
+<% content_for :header do %>
+  <%= render 'pages/index/header_slider' %>
+<% end %>
+
 <div class="wrapper">
   <div class="row-fluid content">
     <%= raw @page.content %>
+    <%= render 'pages/index/second_block' %>
+    <%= render 'pages/index/partners' %>
   </div>
 </div>

@@ -29,10 +29,11 @@ module Guinea
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
 
-    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
-    config.i18n.available_locales = [:en, :ru]
+    # The default locale is :ru and all translations from config/locales/*.rb,yml are auto loaded.
+    config.i18n.load_path += Dir[Rails.root.join('locales', '*.{rb,yml}').to_s]
+    config.i18n.locale = :ru
+    config.i18n.default_locale = :ru
+    config.i18n.available_locales = [:ru, :en]
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -59,5 +60,11 @@ module Guinea
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.generators do |g|
+      g.view_specs      false
+      g.helper_specs    false
+      g.controller_specs false
+    end
   end
 end

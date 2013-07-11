@@ -1,0 +1,21 @@
+.footer {background: image-url("second_background2.jpg"); border-top:1px solid #fff;}
+.footer-inner {overflow: hidden;max-width:960px;margin:0 auto;box-sizing:border-box; padding:40px 20px;}
+.footer-ul {margin:0;padding:0;list-style: none;}
+.footer-h2 {
+    /*font:24px/28px Myriad,Myriad Pro;*/
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    text-align:center;
+    color:#5b5b5b;}
+.footer-li {display: block; font:15px/16px 'Noto Sans', sans-serif;; color:#999999; padding:3px 0;}
+a.footer-li-greenlink {color:#69ad9e;text-decoration: underline;}
+a.footer-li-link {color:#999; text-decoration: underline;}
+a.footer-li-greenlink:hover, a.footer-li-link:hover {text-decoration: none;}
+.footer-li-main {padding-top:80px;}
+.footer-address {display:inline-block; width:18px;height:18px; margin-right:3px;  background: image-url("address.png") left top no-repeat;}
+.footer-phone {display:inline-block; width:18px;height:18px; margin-right:3px;  background: image-url("phone.png") left top no-repeat; }
+.footer-email {display:inline-block; width:18px;height:18px; margin-right:3px; background: image-url("email.png") left top no-repeat; }
+.footer-last .footer-li { white-space:nowrap;  line-height:20px;}
+a.footer-vk {display:inline-block; width:25px;height:25px; margin:15px 10px 0 20px; background: image-url("vk.png") left top no-repeat; text-decoration: none; }
+a.footer-fb {display:inline-block; width:25px;height:25px;background: image-url("fb.png") left top no-repeat;text-decoration: none; margin-top: 15px;}

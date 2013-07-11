@@ -2,14 +2,14 @@ Guinea::Application.routes.draw do
 
   mount_roboto
 
-  root :to => "pages#show", :slug => 'index', locale:'en'
+  root :to => "pages#show", :slug => 'index'
 
   mount Ckeditor::Engine => '/ckeditor'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  post 'feedback' => 'mailer#feedback'
+  resources :feedbacks, :only => :create
 
   localized do
     root :to => "pages#show", :slug => 'index'
