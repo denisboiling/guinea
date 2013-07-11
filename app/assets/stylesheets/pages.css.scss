@@ -4,7 +4,7 @@
 $short-sprite-dimensions: true;
 
 .no-scroll {overflow:hidden;-webkit-overflow-scrolling: touch;}
-.wrapper {max-width:980px; margin:0 auto; }
+//.wrapper {max-width:980px; margin:0 auto; }
 .wrapper-modal {padding:0 330px 0 0; @include box-sizing(border-box); position:relative; z-index:10; }
 
 .header {}
@@ -99,4 +99,35 @@ body {padding:0;}
 .portfolio-first-line {margin:0 1% 2% !important;}
 .project {padding:5px 0;}
 .wrapper-modal {padding:0 15px;}
+}
+
+
+
+.second_block_non_index {
+  min-height: 417px;
+  background: image-url("second_background2.jpg");
+  box-shadow: 0px 3px 7px #dbdbdb;
+  position: relative;
+  z-index:6;
+}
+
+.second_block_non_index_content {
+  //min-width: 1000px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  /*border: solid 1px #000000;*/
+  //padding-left: 170px;
+  //padding-right: 200px;
+  font-family: 'Noto Sans', sans-serif;
+  //background-color: red;
+}
+
+.second_block_non_index_content h1 {
+  font-family: 'Noto Sans', sans-serif!important;
+  font-size: 32px;
+  font-weight: 300;
+  //line-height: 150px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
