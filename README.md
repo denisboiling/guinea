@@ -1,4 +1,4 @@
-# Template Baltic IT
+# Guinea
 
 ## Деплой
 см. [DEPLOY.md](DEPLOY.md)
