@@ -9,21 +9,21 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: balticit_dev
+  database: guinea_dev
   username: root
   password: ''
 
 test: &test
   adapter: mysql2
   encoding: utf8
-  database: balticit_test
+  database: guinea_test
   username: root
   password: ''
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: balticit_prod
+  database: guinea_prod
   username: root
   password: ''
 
