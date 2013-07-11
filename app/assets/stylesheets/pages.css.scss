@@ -4,7 +4,7 @@
 $short-sprite-dimensions: true;
 
 .no-scroll {overflow:hidden;-webkit-overflow-scrolling: touch;}
-.wrapper {max-width:980px; margin:0 auto; }
+//.wrapper {max-width:980px; margin:0 auto; }
 .wrapper-modal {padding:0 330px 0 0; @include box-sizing(border-box); position:relative; z-index:10; }
 
 .header {}
