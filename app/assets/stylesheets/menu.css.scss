@@ -1,3 +1,6 @@
+@import "compass/css3";
+@import "compass/utilities";
+
 .header_menu {
     position: absolute;
     width:100% ;
@@ -56,4 +59,47 @@
 
 .anchor_right_active {
     background: image-url("menu_button.png") right top no-repeat;
+}
+
+
+.submenu {
+  position: absolute;
+  background-color: #35a189;
+  @include opacity(0.9);
+  @include border-radius(5px);
+  border-top: 1px solid #30a68c;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*overflow: auto;*/
+  text-align: left;
+  z-index: 2000;
+  @include box-shadow(#000 0px 0px 1px);
+
+}
+
+.nested_links li {
+  padding-left: 17px;
+  padding-right: 17px;
+  float: none;
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+  line-height: 25px;
+  font-weight:100;
+  color: #fff !important;
+  /*background-color: green;*/
+}
+
+
+.nested_links li a {
+  color: #fff !important;
+}
+
+.submenu_arrow {
+  position: absolute;
+  //background-color: red;
+  top: -10px;
+  left: 20px;
+
 }
