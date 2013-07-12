@@ -3,7 +3,7 @@
     <%= f.input :url %>
     <%= f.input :logo %>
 
-    <%= image_tag resource.logo.thumb.url %>
+    <%= image_tag resource.logo.thumb.url if resource.logo.thumb.url.present? %>
   <% end %>
 
   <%= f.actions %>
