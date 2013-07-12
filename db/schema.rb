@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(:version => 20130712102438) do
     t.string   "phone"
     t.string   "email"
     t.string   "registration_address"
-    t.datetime "birth_date"
+    t.date     "birth_date"
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
   end

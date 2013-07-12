@@ -7,7 +7,7 @@ class CreateOnlineRequests < ActiveRecord::Migration
       t.string :phone
       t.string :email
       t.string :registration_address
-      t.datetime :birth_date
+      t.date :birth_date
 
       t.timestamps
     end
