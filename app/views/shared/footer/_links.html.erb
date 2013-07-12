@@ -1,23 +1,21 @@
 <h2 class="footer-h2">&nbsp;</h2>
 <ul class="footer-ul">
   <li class="footer-li">
-    <%= link_to 'О нас', slug_path('about'), :class => 'footer-li-link' %>
+    <%= link_to 'О нас', slug_path('about') %>
   </li>
   <li class="footer-li">
-    <%= link_to 'Информация для заемщика', slug_path('info_for_borrower'),
-      :class => 'footer-li-link' %>
+    <%= link_to 'Информация для заемщика', slug_path('info_for_borrower') %>
   </li>
   <li class="footer-li">
     <%= link_to 'Действующие программы предоставления займов',
       slug_path('current_lenging_programs'),
-      :class => 'footer-li-greenlink footer-li' %>
+      :class => 'active' %>
   </li>
   <li class="footer-li">
-    <%= link_to 'Справка ИНБКИ', slug_path('inbki_reference'),
-      :class => 'footer-li-link' %>
+    <%= link_to 'Справка ИНБКИ', slug_path('inbki_reference')%>
   </li>
   <li class="footer-li">
-    <%= link_to 'Страхование', slug_path('insurance'), :class => 'footer-li-link' %>
+    <%= link_to 'Страхование', slug_path('insurance') %>
   </li>
   <li class="footer-li footer-li-main">© 2013 ООО “Гинея”</li>
 </ul>
