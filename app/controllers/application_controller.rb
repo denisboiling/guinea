@@ -35,6 +35,10 @@ class ApplicationController < ActionController::Base
     ExceptionNotifier.notify_exception(exception,
                                        env: request.env,
                                        data: {message: 'an error happened'})
+    logger.error exception.class
+    logger.error exception.message
+    logger.error exception.backtrace.join "\n"
+
     respond_to do |format|
       format.html { render template: 'errors/error_500', layout: 'layouts/application', status: 500 }
       format.all { render nothing: true, status: 500}
