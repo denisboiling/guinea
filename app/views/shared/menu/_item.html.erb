@@ -3,9 +3,16 @@
     <span class="anchor_left"><%= page.name %></span>
     <span class="anchor_right">&nbsp;</span>
   <% end %>
-  <ul class="nested_links hidden">
-    <% page.children.each do |child| %>
-      <%= link_to content_tag(:span, child.name), slug_path(child) %>
-    <% end %>
-  </ul>
+  <% if page.children.any? %>
+    <div class="submenu">
+      <ul class="nested_links hidden">
+        <%= image_tag "submenu_arrow.png", :class => 'submenu_arrow' %>
+        <% page.children.each do |child| %>
+          <li>
+            <%= link_to content_tag(:span, child.name), slug_path(child) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 </li>
