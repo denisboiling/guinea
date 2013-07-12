@@ -62,11 +62,11 @@ Guinea::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.middleware.use ExceptionNotifier,
+  config.middleware.use ExceptionNotification::Rack,
     email: {
-      email_prefix: "[Whatever] ",
+      email_prefix: "[Guinea production] ",
       email_format: :html,
-      sender_address: %{"notifier" <notifier@example.com>},
+      sender_address: %{"notifier" <notifier@xn--80afglb2acb0bza4j.xn--p1ai>},
       exception_recipients:
         %w{ novoselov@balticit.ru smirnov@balticit.ru borzenko@balticit.ru
             denis@balticit.ru pryahina@balticit.ru }
