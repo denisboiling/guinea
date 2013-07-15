@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: git://github.com/smartinez87/exception_notification.git
-  revision: 245ce60ab8bae4c0b7d160b751442f1aeaf0c876
+  revision: b977b653da0ea674096a0451ac8b5925a590a3b8
   specs:
     exception_notification (4.0.0)
       actionmailer (>= 3.0.4)
@@ -419,10 +419,10 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    warden (1.2.1)
+    warden (1.2.2)
       rack (>= 1.0)
     websocket (1.0.7)
-    whenever (0.8.2)
+    whenever (0.8.3)
       activesupport (>= 2.3.4)
       chronic (>= 0.6.3)
     xpath (2.0.0)
