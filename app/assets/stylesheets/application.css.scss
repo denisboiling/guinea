@@ -9,6 +9,11 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require active_admin
  *= require jquery.mCustomScrollbar
+ *= require pages
+ *= require feedback
  *= require_tree .
  */
+
+

@@ -1,7 +1,9 @@
 <div class="wrapper">
-  <div class="row-fluid content">
-    <%= raw @page.content %>
+  <div class="row-fluid content second_block_non_index">
+    <div class="second_block_non_index_content">
+      <h1><%= raw @page.name %></h1>
+      <%= raw @page.content %>
+      <%= render 'shared/feedback' %>
+    </div>
   </div>
 </div>
-
-<%= render "shared/feedback" %>
