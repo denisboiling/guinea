@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <div>
+      Имя: <%= @online_request.first_name %>
+    </div>
+    <div>
+      Фамилия: <%= @online_request.last_name %>
+    </div>
+    <div>
+      Отчество: <%= @online_request.patronymic %>
+    </div>
+    <div>
+      Дата рождения: <%= @online_request.birth_date.strftime('%d.%m.%Y') %>
+    </div>
+    <div>
+      Телефон: <%= @online_request.phone %>
+    </div>
+    <div>
+      Адрес регистрации: <%= @online_request.registration_address %>
+    </div>
+    <div>
+      Емайл: <%= @online_request.email %>
+    </div>
+  </body>
+</html>
