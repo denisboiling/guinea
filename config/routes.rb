@@ -11,6 +11,9 @@ Guinea::Application.routes.draw do
 
   resources :feedbacks, :only => :create
 
+  resources :online_requests, :only => :create
+  get 'online_request' => 'online_requests#new'
+
   localized do
     root :to => "pages#show", :slug => 'index'
     get ':slug' => 'pages#show', :as => :slug
