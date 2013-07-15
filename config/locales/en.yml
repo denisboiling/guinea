@@ -7,7 +7,7 @@ en:
     send: "Send"
   js:
     project_prefix: ""
-    wrong_email: "Your e-mail in wrong"
+    wrong_email: "Your e-mail is wrong"
     short_message: "Your message too short"
     send_success: "Your message in sending!"
     send_error: "Error"

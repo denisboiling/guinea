@@ -63,18 +63,31 @@
 
 
 .submenu {
-  position: absolute;
   background-color: #35a189;
+  background-image: url("../images/submenu_arrow.png");
   @include opacity(0.9);
   @include border-radius(5px);
   border-top: 1px solid #30a68c;
-  margin-top: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   /*overflow: auto;*/
   text-align: left;
   z-index: 2000;
   @include box-shadow(#000 0px 0px 1px);
+
+}
+
+.submenu_wrapper {
+  position: absolute;
+  margin-top: 40px;
+  padding-top: 9px;
+  z-index: 2000;
+}
+
+.submenu_arrow {
+  position: absolute;
+  top: 0px;
+  left: 20px;
 
 }
 
@@ -88,18 +101,9 @@
   line-height: 25px;
   font-weight:100;
   color: #fff !important;
-  /*background-color: green;*/
 }
 
 
 .nested_links li a {
   color: #fff !important;
-}
-
-.submenu_arrow {
-  position: absolute;
-  //background-color: red;
-  top: -10px;
-  left: 20px;
-
 }

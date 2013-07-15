@@ -5,66 +5,7 @@
       <span class="third_block_button third_block_button_prev previous">&nbsp;</span>
       <div class="wrapper">
         <ul class="third_block_ul" >
-          <li class="third_block_li">
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border' %>
-              <%= image_tag 'footer_slider_logo_image1.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border' %>
-              <%= image_tag 'footer_slider_logo_image2.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border ' %>
-              <%= image_tag 'footer_slider_logo_image3.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border' %>
-              <%= image_tag 'footer_slider_logo_image4.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border' %>
-              <%= image_tag 'footer_slider_logo_image1.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>>
-          </li>
-          <li class="third_block_li">
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border' %>
-              <%= image_tag 'footer_slider_logo_image2.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border' %>
-              <%= image_tag 'footer_slider_logo_image3.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border' %>
-              <%= image_tag 'footer_slider_logo_image4.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border' %>
-              <%= image_tag 'footer_slider_logo_image1.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to '#', :class => 'third_block_parntners_link' do %>
-              <%= image_tag 'footer_slider_logo_frame.png', :class => 'third_block_logo_border' %>
-              <%= image_tag 'footer_slider_logo_image2.png', :class => 'third_block_rounded_slider_logo' %>
-            <% end %>
-          </li>
+          <%= render Partner.scoped %>
         </ul>
       </div>
       <span class="third_block_button third_block_button_next next">&nbsp;</span>
