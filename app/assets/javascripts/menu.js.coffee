@@ -12,7 +12,6 @@ $(document).ready ->
         $(this).find(".anchor_left").removeClass("anchor_left_active")
         $(this).find(".anchor_right").removeClass("anchor_right_active")
 
-
   $(".nested_links").hide();
   $(".menu_list_item").bind 'mouseenter', (event) ->
     $links = $(this).find ('.nested_links')

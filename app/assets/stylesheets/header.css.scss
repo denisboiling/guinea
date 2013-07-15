@@ -19,12 +19,10 @@
 }
 
 .header_bg {
-    position: relative;
-}
-
-.header_background_container .span12 {
-    /*position: absolute;*/
-    /*margin-left: 0px !important;*/
+  background: image-url("header_background.jpg") no-repeat;
+  background-position: center top;
+  position: relative;
+  height: 575px;
 }
 
 .header_background {

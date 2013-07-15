@@ -42,6 +42,8 @@ gem 'exception_notification', github: 'smartinez87/exception_notification'
 
 gem 'roboto'
 
+gem 'client_side_validations'
+
 gem 'ffaker'
 gem 'factory_girl_rails'
 

@@ -4,8 +4,7 @@ Then /^(?:|I )should can visit each of base pages$/ do
   base_pages.each do |base_page|
     step %Q(I follow "#{base_page.name}")
     current_path.sub('/', '').should == base_page.slug
-    # Confirm that the page will display
-    step %Q(I should see "Projects")
+    step %Q(I should see "#{base_page.name}")
   end
 end
 
