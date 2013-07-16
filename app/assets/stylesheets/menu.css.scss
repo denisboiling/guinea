@@ -5,9 +5,6 @@
     position: absolute;
     width:100% ;
     text-align: center;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*background-color: rgba(255, 0, 0, 0.43);*/
     top: 171px;
 }
 .menu_list {
@@ -15,20 +12,16 @@
     padding: 0px;
     margin: 0px;
 }
-
 .menu_list li {
     float: left;
     list-style-type: none;
 }
-
 .menu_list_anchor {
     font-size: 18px;
     font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
     color: #fff!important;
 }
-
-
 .anchor_left {
     float: left;
     line-height: 41px;
@@ -41,13 +34,10 @@
     height: 41px;
     padding-right: 8px;
 }
-
 .menu_list_anchor_hover {
     text-decoration: underline;
     color: #fff;
-
 }
-
 .menu_list_anchor_hover_blank {
     text-decoration: none;
     color: #fff;
@@ -56,19 +46,14 @@
     background: image-url("menu_button.png") left top no-repeat;
 
 }
-
 .anchor_right_active {
     background: image-url("menu_button.png") right top no-repeat;
 }
-
-
 .submenu {
-  position: absolute;
   background-color: #35a189;
   @include opacity(0.9);
   @include border-radius(5px);
   border-top: 1px solid #30a68c;
-  margin-top: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   /*overflow: auto;*/
@@ -77,7 +62,18 @@
   @include box-shadow(#000 0px 0px 1px);
 
 }
+.submenu_wrapper {
+  position: absolute;
+  margin-top: 40px;
+  padding-top: 9px;
+  z-index: 2000;
+}
+.submenu_arrow {
+  position: absolute;
+  top: 0px;
+  left: 20px;
 
+}
 .nested_links li {
   padding-left: 17px;
   padding-right: 17px;
@@ -88,18 +84,11 @@
   line-height: 25px;
   font-weight:100;
   color: #fff !important;
-  /*background-color: green;*/
 }
-
-
 .nested_links li a {
   color: #fff !important;
+  text-decoration: none;
 }
-
-.submenu_arrow {
-  position: absolute;
-  //background-color: red;
-  top: -10px;
-  left: 20px;
-
+.nested_links li a:hover {
+  text-decoration: underline;
 }
