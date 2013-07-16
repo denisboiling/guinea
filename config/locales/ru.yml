@@ -1,6 +1,6 @@
 ru:
   footer:
-    text: "Компания BalticIT"
+    text: "Компания"
   mailer:
     email: "Введите ваш e-mail"
     message: "Введите ваше сообщение"
@@ -86,15 +86,16 @@ ru:
         registration_address: Адрес регистрации
         updated_at: Дата обновления
       page:
+        ancestry: Родительская страница
+        created_at: Дата создания
+        hidden: Скрытая
         id: Номер
+        layout: Шаблон для страницы
         name: Заголовок
-        slug: Псевдоним
         parent: Родительская страница
         parent_id: Родительская страница
-        ancestry: Родительская страница
-        hidden: Скрытая
-        layout: Шаблон для страницы
-        created_at: Дата создания
+        position: Позиция
+        slug: Псевдоним
         updated_at: Дата обновления
       partner:
         id: Номер
