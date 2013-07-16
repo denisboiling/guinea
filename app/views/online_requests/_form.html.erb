@@ -1,32 +1,37 @@
 <%= form_for @online_request, remote: true, validate: true do |f| %>
-  <div class="field">
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
+
+  <div class="request" id="request">
+    <div class="request-control">
+      <div class="field">
+        <%= f.label :last_name, class: 'request_lable' %>
+        <%= f.text_field :last_name, class: 'input-block-level' %>
+      </div>
+      <div class="field">
+        <%= f.label :first_name, class: 'request_lable' %>
+        <%= f.text_field :first_name, class: 'input-block-level' %>
+      </div>
+      <div class="field">
+        <%= f.label :patronymic, class: 'request_lable' %>
+        <%= f.text_field :patronymic, class: 'input-block-level' %>
+      </div>
+      <div class="field">
+        <%= f.label :birth_date, class: 'request_lable' %>
+        <%= f.date_select :birth_date, as: :date_select,
+                          start_year: 1900, end_year: Time.now.year %>
+      </div>
+      <div class="field">
+        <%= f.label :registration_address, class: 'request_lable' %>
+        <%= f.text_field :registration_address,class: 'input-block-level' %>
+      </div>
+      <div class="field">
+        <%= f.label :phone, class: 'request_lable' %>
+        <%= f.text_field :phone, class: 'input-block-level' %>
+      </div>
+      <div class="field">
+        <%= f.label :email, class: 'request_lable' %>
+        <%= f.email_field :email, class: 'input-block-level' %>
+      </div>
+        <%= f.submit 'Отправить', class: 'feedback-btn'%>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
-  </div>
-  <div class="field">
-    <%= f.label :patronymic %>
-    <%= f.text_field :patronymic %>
-  </div>
-  <div class="field">
-    <%= f.label :birth_date %>
-    <%= f.date_select :birth_date, as: :date_select,
-                      start_year: 1900, end_year: Time.now.year %>
-  </div>
-  <div class="field">
-    <%= f.label :registration_address %>
-    <%= f.text_field :registration_address %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %>
-    <%= f.text_field :phone %>
-  </div>
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.email_field :email %>
-  </div>
-  <%= f.submit 'Отправить'  %>
 <% end %>
