@@ -11,7 +11,7 @@
           <% page.children.each do |child| %>
             <li>
               <%= link_to content_tag(:span, child.name), slug_path(child),
-                :class => menu_item_state(child) %> %>
+                :class => menu_item_state(child) %>
             </li>
           <% end %>
         </ul>
