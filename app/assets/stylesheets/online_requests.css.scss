@@ -29,7 +29,7 @@ $short-sprite-dimensions: true;
   color: #5b5b5b;
 }
 .field select {
-  width: 162px;
+  width: 161px;
   //margin-top: 10px;
   margin-bottom: 15px;
   margin-left: 2px;
@@ -47,6 +47,7 @@ $short-sprite-dimensions: true;
   height: 48px !important;
   width: 500px;
   @include border-radius(6px);
+  font-size: 20px;
 }
 
 .field input[type=email] {
@@ -54,6 +55,7 @@ $short-sprite-dimensions: true;
   height: 48px !important;
   width: 500px;
   @include border-radius(6px);
+  font-size: 20px;
 }
 
 .field input:focus {
