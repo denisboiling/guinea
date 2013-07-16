@@ -1,4 +1,4 @@
-<li class="menu_list_item">
+<li class="menu_list_item <%= menu_item_state(page) %>">
   <%= link_to slug_path(page), :class => 'menu_list_anchor' do %>
     <span class="anchor_left"><%= page.name %></span>
     <span class="anchor_right">&nbsp;</span>
@@ -9,7 +9,8 @@
         <%= image_tag "submenu_arrow.png", :class => 'submenu_arrow' %>
         <% page.children.each do |child| %>
           <li>
-            <%= link_to content_tag(:span, child.name), slug_path(child) %>
+            <%= link_to content_tag(:span, child.name), slug_path(child),
+                        menu_item_state(child) %>
           </li>
         <% end %>
       </ul>
