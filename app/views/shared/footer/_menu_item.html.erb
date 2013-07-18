@@ -1,11 +1,11 @@
-<li class="footer-li" <%= menu_item_state(page) %>">
+<li class="footer-li <%= menu_item_state(page) %>">
   <%= link_to slug_path(page) do %>
     <%= page.name %>
   <% end %>
   <ul>
     <% page.children.each do |child| %>
       <li class="footer-li">
-        <%= link_to content_tag(:span, child.name), slug_path(child)%>
+        <%= link_to content_tag(:span, child.name), slug_path(child) %>
       </li>
     <% end %>
   </ul>
