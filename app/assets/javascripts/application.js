@@ -13,12 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-modal
-//= require jquery.mCustomScrollbar
 //= require jquery.mousewheel
 //= require jquery.liquidcarousel
 //= require modernizr.custom
 //= require jquery.cslider
 //= require shared/global
+//= require rails.validations
 //= require_tree .
 //= require i18n
 //= require i18n/translations

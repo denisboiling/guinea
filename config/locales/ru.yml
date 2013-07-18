@@ -1,6 +1,6 @@
 ru:
   footer:
-    text: "Компания BalticIT"
+    text: "Компания"
   mailer:
     email: "Введите ваш e-mail"
     message: "Введите ваше сообщение"
@@ -11,6 +11,8 @@ ru:
     short_message: "Ваше сообщение cлишком короткое"
     send_success: "Ваше сообщение успешно отправлено"
     send_error: "Произошла ошибка"
+    online_request:
+      send_success: "Ваша заявка отправлена!"
   translation:
     en: "English"
     ru: "Русский"
@@ -27,6 +29,12 @@ ru:
         other: Баннеры
       feedback:
         Обратная связь
+      online_request:
+        zero: Online-заявок
+        one: Online-заявка
+        few: Online-заявок
+        many: Online-заявок
+        other: Online-заявки
       page:
         zero: Страниц
         one: Страница
@@ -66,16 +74,28 @@ ru:
         message: Сообщение
         created_at: Дата создания
         updated_at: Дата обновления
-      page:
+      online_request:
+        birth_date: Дата рождения
+        created_at: Дата создания
+        email: Емайл
+        first_name: Имя
         id: Номер
+        last_name: Фамилия
+        patronymic: Отчество
+        phone: Телефон
+        registration_address: Адрес регистрации
+        updated_at: Дата обновления
+      page:
+        ancestry: Родительская страница
+        created_at: Дата создания
+        hidden: Скрытая
+        id: Номер
+        layout: Шаблон для страницы
         name: Заголовок
-        slug: Псевдоним
         parent: Родительская страница
         parent_id: Родительская страница
-        ancestry: Родительская страница
-        hidden: Скрытая
-        layout: Шаблон для страницы
-        created_at: Дата создания
+        position: Позиция
+        slug: Псевдоним
         updated_at: Дата обновления
       partner:
         id: Номер
